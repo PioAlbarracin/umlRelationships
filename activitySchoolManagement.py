@@ -23,8 +23,17 @@ class Student(Person):
     def study(self):
         return f"{self.name} is studying."
 
+class Teacher(Person):
+
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def teach(self):
+        return f"{self.name} is teaching."
+
 person1 = Person("Lina", 20)
 student1 = Student("Lina", 20)
+teacher1 = Teacher("Lina", 30)
 
 print(person1.get_info()) # For the person class
 print(f'Age: {person1.age}\n') 
@@ -33,4 +42,7 @@ print(f'Age: {person1.age}\n')
 
 print(student1.get_info()) # For the student class
 print(student1.study())
+print("\n")
 
+print(teacher1.get_info()) # For the teacher class
+print(teacher1.teach())
