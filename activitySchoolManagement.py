@@ -33,7 +33,7 @@ class Teacher(Person):
 
 person1 = Person("Lina", 20)
 student1 = Student("Lina", 20)
-teacher1 = Teacher("Lina", 30)
+teacher1 = Teacher("Mona", 30)
 
 print(person1.get_info()) # For the person class
 print(f'Age: {person1.age}\n') 
