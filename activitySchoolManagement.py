@@ -41,8 +41,10 @@ print(f'Age: {person1.age}\n')
 #It is better because it encapsulates the attribute age, and is only accessed via the getter method. Which is detected by the computer and is then printed without issue.
 
 print(student1.get_info()) # For the student class
+print(f'Age: {student1.age}')
 print(student1.study())
 print("\n")
 
 print(teacher1.get_info()) # For the teacher class
+print(f'Age: {teacher1.age}')
 print(teacher1.teach())
